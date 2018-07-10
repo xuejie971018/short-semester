@@ -5,8 +5,9 @@ import HomePage from './routes/HomePage/HomePage';
 import IndexPage from './routes/IndexPage/IndexPage';
 import testPage from './routes/testPage';
 
+// import history from './history'
 
-function RouterConfig({ history }) {
+function RouterConfig({ app, history }) {
   return (
     <Router history={history}>
       <div>

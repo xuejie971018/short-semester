@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'dva';
 
 import Header from '../../components/Header/Header';
-// import SystemInfo from '../../components/SystemInfo/SystemInfo';
+import SystemInfo from '../../components/SystemInfo/SystemInfo';
 
 import {homePage, container} from './index.css';
 
@@ -12,7 +12,7 @@ const HomePage = ({children, home})=> {
     return (
         <div className={homePage}>
             <Header activeIndex={activeIndex}/>
-            {/* <SystemInfo/> */}
+            <SystemInfo/>
             <div className={container} style={{height}}>
                 {children}
             </div>
